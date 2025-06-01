@@ -1,11 +1,75 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+// pages/index.astro
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Bio from "../components/Bio.astro";
+import Experience from "../components/Experience.astro";
+import TechnicalSkills from "../components/TechnicalSkills.astro";
+import CallToAction from "../components/CallToAction.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Franklin Ikeh - Backend Software Engineer">
+    <!-- Hero Section -->
+    <Hero />
+
+    <!-- Bio Section -->
+    <Bio />
+
+    <!-- Experience Section -->
+    <Experience />
+
+    <!-- Technical Skills Section -->
+    <TechnicalSkills />
+
+    <!-- Call to Action Section -->
+    <CallToAction />
 </Layout>
+
+<style>
+    /* Custom animations and enhancements */
+    .hero {
+        background-image: radial-gradient(
+                circle at 25% 25%,
+                rgba(59, 130, 246, 0.1) 0%,
+                transparent 50%
+            ),
+            radial-gradient(
+                circle at 75% 75%,
+                rgba(139, 92, 246, 0.1) 0%,
+                transparent 50%
+            );
+    }
+
+    .avatar img {
+        transition: transform 0.3s ease;
+    }
+
+    .avatar:hover img {
+        transform: scale(1.05);
+    }
+
+    .card {
+        transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+    }
+
+    .stat {
+        transition: all 0.2s ease;
+    }
+
+    .stat:hover {
+        transform: scale(1.05);
+    }
+
+    .badge {
+        transition: all 0.2s ease;
+    }
+
+    .badge:hover {
+        transform: scale(1.1);
+    }
+</style>
