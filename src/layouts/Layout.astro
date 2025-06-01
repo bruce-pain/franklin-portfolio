@@ -55,19 +55,22 @@ const {
                                 <a
                                     href="/"
                                     class="hover:bg-primary hover:text-primary-content"
-                                    >Home</a>
+                                    >Home</a
+                                >
                             </li>
                             <li>
                                 <a
                                     href="/projects"
                                     class="hover:bg-primary hover:text-primary-content"
-                                    >Projects</a>
+                                    >Projects</a
+                                >
                             </li>
                             <li>
                                 <a
                                     href="/blog"
                                     class="hover:bg-primary hover:text-primary-content"
-                                    >Blog</a>
+                                    >Blog</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -88,19 +91,22 @@ const {
                             <a
                                 href="/"
                                 class="btn btn-ghost hover:bg-primary hover:text-primary-content"
-                                >Home</a>
+                                >Home</a
+                            >
                         </li>
                         <li>
                             <a
                                 href="/projects"
                                 class="btn btn-ghost hover:bg-primary hover:text-primary-content"
-                                >Projects</a>
+                                >Projects</a
+                            >
                         </li>
                         <li>
                             <a
                                 href="/blog"
                                 class="btn btn-ghost hover:bg-primary hover:text-primary-content"
-                                >Blog</a>
+                                >Blog</a
+                            >
                         </li>
                     </ul>
                 </div>
@@ -162,8 +168,11 @@ const {
 
                 <!-- Contact Details -->
                 <div
-                    class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl"
+                    class="flex flex-col justify-center items-center w-full max-w-4xl"
                 >
+                    <!-- <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl"
+            > -->
                     <!-- Direct Contact -->
                     <div class="space-y-4">
                         <h4 class="font-semibold text-lg">Direct Contact</h4>
@@ -205,7 +214,7 @@ const {
                     </div>
 
                     <!-- Contact Form -->
-                    <div class="space-y-4">
+                    <!-- <div class="space-y-4">
                         <h4 class="font-semibold text-lg">Quick Message</h4>
                         <form class="space-y-3" action="#" method="POST">
                             <input
@@ -231,7 +240,7 @@ const {
                                 Send Message
                             </button>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!-- Social Links -->
@@ -292,12 +301,15 @@ const {
                 <!-- Copyright -->
                 <div class="mt-8 pt-8 border-t border-base-300">
                     <p class="text-base-content/60">
-                        © 2024 Franklin Ikeh. Built with <a
+                        © 2025 Franklin Ikeh. Built with <a
                             href="https://astro.build"
                             class="link link-primary">Astro</a
-                        > and <a
+                        >, <a
                             href="https://tailwindcss.com"
                             class="link link-primary">Tailwind CSS</a
+                        > and <a
+                            href="https://daisyui.com"
+                            class="link link-primary">DaisyUI</a
                         >
                     </p>
                 </div>
@@ -311,8 +323,8 @@ const {
                 setupNavHighlighter,
             } from "../scripts/theme-controller.ts";
 
-			setupThemeController();
-			setupNavHighlighter();
+            setupThemeController();
+            setupNavHighlighter();
         </script>
     </body>
 </html>
