@@ -1,3 +1,12 @@
+---
+import TechnicalSkillsData from "../data/TechnicalSkills.json";
+
+const languages = TechnicalSkillsData["Languages"];
+const frameworks = TechnicalSkillsData["Frameworks & Libraries"];
+const tools = TechnicalSkillsData["Tools & Technologies"];
+const practices = TechnicalSkillsData["Development Practices"];
+---
+
 <section class="py-20 bg-base-100">
     <div class="container mx-auto px-4">
         <div class="max-w-6xl mx-auto">
@@ -29,64 +38,20 @@
                         <div
                             class="flex flex-wrap gap-4 justify-center items-center"
                         >
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=python"
-                                    alt="Python"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">Python</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=postgres"
-                                    alt="SQL"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">SQL</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=js"
-                                    alt="JavaScript"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium"
-                                    >JavaScript</span
-                                >
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=ts"
-                                    alt="TypeScript"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium"
-                                    >TypeScript</span
-                                >
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <div class="flex">
-                                    <img
-                                        src="https://skillicons.dev/icons?i=html"
-                                        alt="HTML"
-                                        class="w-12 h-12"
-                                    />
-                                </div>
-                                <span class="text-sm font-medium">HTML</span
-                                >
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <div class="flex">
-                                    <img
-                                        src="https://skillicons.dev/icons?i=css"
-                                        alt="CSS"
-                                        class="w-12 h-12"
-                                    />
-                                </div>
-                                <span class="text-sm font-medium">CSS</span
-                                >
-                            </div>
+                            {
+                                languages.map((lang) => (
+                                    <div class="flex flex-col items-center gap-2">
+                                        <img
+                                            src={`https://skillicons.dev/icons?i=${lang["skillicon-name"]}`}
+                                            alt={lang["name"]}
+                                            class="w-12 h-12"
+                                        />
+                                        <span class="text-sm font-medium">
+                                            {lang["name"]}
+                                        </span>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
@@ -110,40 +75,20 @@
                         <div
                             class="flex flex-wrap gap-4 justify-center items-center"
                         >
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=fastapi"
-                                    alt="FastAPI"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">FastAPI</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=django"
-                                    alt="Django"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">Django</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=react"
-                                    alt="React"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">React</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=py"
-                                    alt="SQLAlchemy"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium"
-                                    >SQLAlchemy</span
-                                >
-                            </div>
+                            {
+                                frameworks.map((framework) => (
+                                    <div class="flex flex-col items-center gap-2">
+                                        <img
+                                            src={`https://skillicons.dev/icons?i=${framework["skillicon-name"]}`}
+                                            alt={framework["name"]}
+                                            class="w-12 h-12"
+                                        />
+                                        <span class="text-sm font-medium">
+                                            {framework["name"]}
+                                        </span>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
@@ -167,40 +112,20 @@
                         <div
                             class="flex flex-wrap gap-4 justify-center items-center"
                         >
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=postgres"
-                                    alt="PostgreSQL"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium"
-                                    >PostgreSQL</span
-                                >
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=docker"
-                                    alt="Docker"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">Docker</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=git"
-                                    alt="Git"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">Git</span>
-                            </div>
-                            <div class="flex flex-col items-center gap-2">
-                                <img
-                                    src="https://skillicons.dev/icons?i=linux"
-                                    alt="Linux"
-                                    class="w-12 h-12"
-                                />
-                                <span class="text-sm font-medium">Linux</span>
-                            </div>
+                            {
+                                tools.map((tool) => (
+                                    <div class="flex flex-col items-center gap-2">
+                                        <img
+                                            src={`https://skillicons.dev/icons?i=${tool["skillicon-name"]}`}
+                                            alt={tool["name"]}
+                                            class="w-12 h-12"
+                                        />
+                                        <span class="text-sm font-medium">
+                                            {tool["name"]}
+                                        </span>
+                                    </div>
+                                ))
+                            }
                         </div>
                     </div>
                 </div>
@@ -212,30 +137,13 @@
                     Development Practices
                 </h3>
                 <div class="flex flex-wrap justify-center gap-3">
-                    <div class="badge badge-lg badge-outline">
-                        RESTful API Design
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        Test-Driven Development (TDD)
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        CI/CD Pipelines
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        Microservices Architecture
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        Agile Methodology
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        Database Design
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        Performance Optimization
-                    </div>
-                    <div class="badge badge-lg badge-outline">
-                        Security Best Practices
-                    </div>
+                    {
+                        practices.map((practice) => (
+                            <div class="badge badge-lg badge-outline">
+                                {practice}
+                            </div>
+                        ))
+                    }
                 </div>
             </div>
         </div>
