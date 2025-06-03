@@ -1,0 +1,62 @@
+---
+const { project } = Astro.props;
+---
+
+<div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+    <figure class="relative overflow-hidden">
+      <img 
+        src={project.image} 
+        alt={`${project.title} preview`}
+        class="w-full h-48 object-cover transition-transform duration-300 hover:scale-110"
+        loading="lazy"
+      />
+      <div class="absolute top-4 right-4">
+        <div class="badge badge-success badge-sm">{project.status}</div>
+      </div>
+    </figure>
+    
+    <div class="card-body">
+      <h3 class="card-title text-primary text-lg">{project.title}</h3>
+      <p class="text-sm font-medium text-base-content/80 mb-2">{project.subtitle}</p>
+      <p class="text-sm text-base-content/70 mb-4">{project.description}</p>
+      
+      <!-- Technologies -->
+      <div class="mb-4">
+        <div class="flex flex-wrap gap-1">
+          {project.technologies.slice(0, 3).map((tech: any) => (
+            <span class="badge badge-outline badge-xs">{tech}</span>
+          ))}
+          {project.technologies.length > 3 && (
+            <span class="badge badge-outline badge-xs">+{project.technologies.length - 3} more</span>
+          )}
+        </div>
+      </div>
+      
+      <div class="card-actions justify-between items-center mt-auto">
+        <div class="flex gap-2">
+          <a 
+            href={project.demoUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+          >
+            Demo
+          </a>
+          <a 
+            href={project.githubUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+          >
+            Code
+          </a>
+        </div>
+        <!-- <button 
+          class="btn btn-ghost btn-sm"
+          onclick={`document.getElementById('${project.id}-modal').showModal()`}
+        >
+          Details
+        </button> -->
+      </div>
+    </div>
+  </div>
