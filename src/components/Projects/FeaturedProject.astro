@@ -133,3 +133,22 @@ const { project, index } = Astro.props;
         </div>
     </div>
 </div>
+
+<style>
+  .card {
+      transition: all 0.3s ease;
+  }
+
+  .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+
+  .badge {
+      transition: all 0.2s ease;
+  }
+
+  .badge:hover {
+      transform: scale(1.05);
+  }
+</style>
