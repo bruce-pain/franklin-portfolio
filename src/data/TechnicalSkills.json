@@ -23,6 +23,15 @@
         {
             "name": "CSS",
             "skillicon-name": "css"
+        },
+        {
+            "name": "Bash",
+            "skillicon-name": "bash"
+        },
+        { "name": "Markdown", "skillicon-name": "markdown" },
+        {
+            "name": "C",
+            "skillicon-name": "c"
         }
     ],
     "Frameworks & Libraries": [
@@ -37,6 +46,10 @@
         {
             "name": "React",
             "skillicon-name": "react"
+        },
+        {
+            "name": "Astro",
+            "skillicon-name": "astro"
         },
         {
             "name": "SQLAlchemy",
@@ -59,6 +72,14 @@
         {
             "name": "Linux",
             "skillicon-name": "linux"
+        },
+        {
+            "name": "GitHub",
+            "skillicon-name": "github"
+        },
+        {
+            "name": "Github Actions",
+            "skillicon-name": "githubactions"
         }
     ],
     "Development Practices": [

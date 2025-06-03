@@ -1,0 +1,26 @@
+---
+const { title, iconList, lucideIcon } = Astro.props;
+---
+
+<div class="card bg-base-200 shadow-lg">
+    <div class="card-body">
+        <h3 class="card-title text-primary mb-4">
+            <slot />
+            {title}
+        </h3>
+        <div class="flex flex-wrap gap-4 justify-center items-center">
+            {
+                iconList.map((item: any) => (
+                    <div class="flex flex-col items-center gap-2">
+                        <img
+                            src={`https://skillicons.dev/icons?i=${item["skillicon-name"]}`}
+                            alt={item["name"]}
+                            class="w-12 h-12"
+                        />
+                        <span class="text-sm font-medium">{item["name"]}</span>
+                    </div>
+                ))
+            }
+        </div>
+    </div>
+</div>
