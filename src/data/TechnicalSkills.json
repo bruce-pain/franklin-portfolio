@@ -1,0 +1,74 @@
+{
+    "Languages": [
+        {
+            "name": "Python",
+            "skillicon-name": "python"
+        },
+        {
+            "name": "SQL",
+            "skillicon-name": "postgres"
+        },
+        {
+            "name": "JavaScript",
+            "skillicon-name": "js"
+        },
+        {
+            "name": "TypeScript",
+            "skillicon-name": "ts"
+        },
+        {
+            "name": "HTML",
+            "skillicon-name": "html"
+        },
+        {
+            "name": "CSS",
+            "skillicon-name": "css"
+        }
+    ],
+    "Frameworks & Libraries": [
+        {
+            "name": "FastAPI",
+            "skillicon-name": "fastapi"
+        },
+        {
+            "name": "Django",
+            "skillicon-name": "django"
+        },
+        {
+            "name": "React",
+            "skillicon-name": "react"
+        },
+        {
+            "name": "SQLAlchemy",
+            "skillicon-name": "py"
+        }
+    ],
+    "Tools & Technologies": [
+        {
+            "name": "PostgreSQL",
+            "skillicon-name": "postgres"
+        },
+        {
+            "name": "Docker",
+            "skillicon-name": "docker"
+        },
+        {
+            "name": "Git",
+            "skillicon-name": "git"
+        },
+        {
+            "name": "Linux",
+            "skillicon-name": "linux"
+        }
+    ],
+    "Development Practices": [
+        "RESTful API Design",
+        "Test-Driven Development (TDD)",
+        "CI/CD Pipelines",
+        "Microservices Architecture",
+        "Agile Methodology",
+        "Database Design",
+        "Performance Optimization",
+        "Security Best Practices"
+    ]
+}
