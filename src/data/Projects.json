@@ -1,0 +1,124 @@
+[
+    {
+        "id": "kwiki-ai",
+        "title": "Kwiki AI",
+        "subtitle": "AI-Powered Flashcard Generator",
+        "description": "A full-stack platform that generates intelligent flashcard decks from any topic using advanced LLMs, featuring interactive study modes and spaced repetition algorithms.",
+        "longDescription": "Built a comprehensive learning platform that leverages DeepSeek-r1-distill-llama-70b to automatically generate educational flashcards from user-provided topics. The system includes user authentication, interactive study sessions, and intelligent spaced repetition to optimize learning retention.",
+        "technologies": [
+            "FastAPI",
+            "React",
+            "PostgreSQL",
+            "Groq API",
+            "JWT Auth",
+            "Google OAuth2",
+            "Tailwind CSS"
+        ],
+        "features": [
+            "AI-powered flashcard generation using advanced LLMs",
+            "Interactive study mode with spaced repetition algorithm",
+            "Secure authentication with JWT and Google OAuth2",
+            "Responsive React frontend with modern UI/UX",
+            "Scalable FastAPI backend with PostgreSQL database",
+            "CI/CD deployment pipeline with GitHub Actions"
+        ],
+        "challenges": [
+            "Optimizing LLM API calls for cost-effectiveness and speed",
+            "Implementing spaced repetition algorithm for optimal learning",
+            "Designing scalable database schema for flashcard relationships",
+            "Managing user sessions and authentication across platforms"
+        ],
+        "achievements": [
+            "Successfully deployed to production using Vercel and Render",
+            "Achieved sub-2-second response times for flashcard generation",
+            "Implemented comprehensive error handling and user feedback",
+            "Built reusable component library for consistent UI"
+        ],
+        "image": "/kwiki_ai.png",
+        "demoUrl": "https://kwiki-ai-demo.vercel.app",
+        "githubUrl": "https://github.com/bruce-pain/kwiki-ai",
+        "status": "Live",
+        "featured": true
+    },
+    {
+        "id": "fundraiser-api",
+        "title": "Fundraiser API",
+        "subtitle": "Scalable Fundraising Platform",
+        "description": "A comprehensive fundraising platform with secure payment processing, campaign management, and media handling capabilities.",
+        "longDescription": "Developed a robust backend system for managing fundraising campaigns with integrated payment processing, user authentication, and file management. The platform supports multiple campaign types, donor management, and real-time progress tracking.",
+        "technologies": [
+            "FastAPI",
+            "SQLAlchemy",
+            "PostgreSQL",
+            "Paystack API",
+            "Cloudinary",
+            "Pytest",
+            "Alembic"
+        ],
+        "features": [
+            "JWT-based authentication and authorization system",
+            "Campaign creation and management with progress tracking",
+            "Secure payment processing integration with Paystack",
+            "Media upload and management via Cloudinary",
+            "Comprehensive API documentation with FastAPI",
+            "Database migrations with Alembic"
+        ],
+        "challenges": [
+            "Implementing secure payment processing workflows",
+            "Designing flexible database schema for various campaign types",
+            "Handling file uploads and media optimization",
+            "Ensuring data consistency across complex relationships"
+        ],
+        "achievements": [
+            "Maintained 95%+ test coverage with comprehensive Pytest suite",
+            "Built CI/CD pipeline with automated testing and deployment",
+            "Implemented robust error handling and logging system",
+            "Achieved scalable architecture supporting concurrent users"
+        ],
+        "image": "/fundraiser.png",
+        "demoUrl": "https://fundraiser-api-docs.herokuapp.com",
+        "githubUrl": "https://github.com/bruce-pain/fundraiser-api",
+        "status": "Live",
+        "featured": false
+    },
+    {
+        "id": "picture-txt",
+        "title": "Picture.txt",
+        "subtitle": "Image to ASCII Art Converter",
+        "description": "A high-performance image processing service that converts images to ASCII art using OpenCV and custom algorithms.",
+        "longDescription": "Created an efficient image processing service that transforms uploaded images into ASCII art representations. The system handles various image formats, provides customizable ASCII output options, and supports batch processing for high-volume conversions.",
+        "technologies": [
+            "Python",
+            "FastAPI",
+            "OpenCV",
+            "PIL",
+            "Async Processing",
+            "RESTful APIs"
+        ],
+        "features": [
+            "Support for multiple image formats (JPEG, PNG, GIF, etc.)",
+            "Customizable ASCII output with various character sets",
+            "Asynchronous processing for improved performance",
+            "RESTful API endpoints for upload, processing, and download",
+            "Batch processing capabilities for multiple images",
+            "Optimized algorithms for faster conversion times"
+        ],
+        "challenges": [
+            "Optimizing image processing algorithms for performance",
+            "Handling memory management for large image files",
+            "Implementing efficient character mapping algorithms",
+            "Designing scalable async processing architecture"
+        ],
+        "achievements": [
+            "Reduced processing time by 40% through algorithm optimization",
+            "Implemented responsive async processing for scalable throughput",
+            "Built robust error handling for various image formats",
+            "Created intuitive API interface with comprehensive documentation"
+        ],
+        "image": "/picture_txt.png",
+        "demoUrl": "https://picture-txt-demo.herokuapp.com",
+        "githubUrl": "https://github.com/bruce-pain/picture-txt",
+        "status": "Live",
+        "featured": true
+    }
+]
