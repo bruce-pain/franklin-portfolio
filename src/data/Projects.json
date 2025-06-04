@@ -6,13 +6,15 @@
         "description": "A full-stack platform that generates intelligent flashcard decks from any topic using advanced LLMs, featuring interactive study modes and spaced repetition algorithms.",
         "longDescription": "Built a comprehensive learning platform that leverages DeepSeek-r1-distill-llama-70b to automatically generate educational flashcards from user-provided topics. The system includes user authentication, interactive study sessions, and intelligent spaced repetition to optimize learning retention.",
         "technologies": [
+            "Python",
             "FastAPI",
-            "React",
             "PostgreSQL",
-            "Groq API",
             "JWT Auth",
+            "Groq API",
             "Google OAuth2",
-            "Tailwind CSS"
+            "React",
+            "Tailwind CSS",
+            "shadcn/ui"
         ],
         "features": [
             "AI-powered flashcard generation using advanced LLMs",
@@ -35,8 +37,8 @@
             "Built reusable component library for consistent UI"
         ],
         "image": "/kwiki_ai.png",
-        "demoUrl": "https://kwiki-ai-demo.vercel.app",
-        "githubUrl": "https://github.com/bruce-pain/kwiki-ai",
+        "demoUrl": "https://kwiki-ai.vercel.app",
+        "githubUrl": "https://github.com/bruce-pain/kwiki-ai-be",
         "status": "Live",
         "featured": true
     },
@@ -47,6 +49,7 @@
         "description": "A comprehensive fundraising platform with secure payment processing, campaign management, and media handling capabilities.",
         "longDescription": "Developed a robust backend system for managing fundraising campaigns with integrated payment processing, user authentication, and file management. The platform supports multiple campaign types, donor management, and real-time progress tracking.",
         "technologies": [
+            "Python",
             "FastAPI",
             "SQLAlchemy",
             "PostgreSQL",
@@ -76,8 +79,8 @@
             "Achieved scalable architecture supporting concurrent users"
         ],
         "image": "/fundraiser.png",
-        "demoUrl": "https://fundraiser-api-docs.herokuapp.com",
-        "githubUrl": "https://github.com/bruce-pain/fundraiser-api",
+        "demoUrl": "https://fundraiser-project-api-production.up.railway.app/docs",
+        "githubUrl": "",
         "status": "Live",
         "featured": false
     },
@@ -91,16 +94,13 @@
             "Python",
             "FastAPI",
             "OpenCV",
-            "PIL",
-            "Async Processing",
-            "RESTful APIs"
+            "Pillow"
         ],
         "features": [
             "Support for multiple image formats (JPEG, PNG, GIF, etc.)",
             "Customizable ASCII output with various character sets",
             "Asynchronous processing for improved performance",
-            "RESTful API endpoints for upload, processing, and download",
-            "Batch processing capabilities for multiple images",
+            "RESTful API endpoints for upload, and processing",
             "Optimized algorithms for faster conversion times"
         ],
         "challenges": [
@@ -116,7 +116,7 @@
             "Created intuitive API interface with comprehensive documentation"
         ],
         "image": "/picture_txt.png",
-        "demoUrl": "https://picture-txt-demo.herokuapp.com",
+        "demoUrl": "https://picture-txt.vercel.app/",
         "githubUrl": "https://github.com/bruce-pain/picture-txt",
         "status": "Live",
         "featured": true

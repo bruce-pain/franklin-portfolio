@@ -56,14 +56,16 @@ const { project } = Astro.props;
                 >
                     Demo
                 </a>
-                <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn btn-outline btn-sm"
-                >
-                    Code
-                </a>
+                {project.githubUrl && (
+                    <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline btn-sm"
+                    >
+                        Code
+                    </a>
+                )}
             </div>
             <!-- <button 
           class="btn btn-ghost btn-sm"
