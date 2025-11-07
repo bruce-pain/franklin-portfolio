@@ -1,5 +1,64 @@
 [
     {
+        "id": "cissa-paragon",
+        "title": "CISSA Paragon",
+        "subtitle": "Faculty Student Association Website & Management System",
+        "description": "A comprehensive full-stack platform for the Communication and Information Sciences Students' Association (CISSA) at the University of Ilorin, featuring a public-facing website and an admin dashboard for managing announcements, signatories, and content.",
+        "longDescription": "Developed a modern, responsive web platform for CISSA that serves as both a public information hub and an administrative content management system. The platform showcases faculty departments, executives, news/announcements, and contact information while providing administrators with powerful tools to manage signatories and create rich-text announcements with image uploads. Built with Next.js 15 for optimal performance and SEO, FastAPI for a robust backend, and PostgreSQL for reliable data persistence.",
+        "technologies": [
+            "TypeScript",
+            "Next.js 15",
+            "React",
+            "Tailwind CSS",
+            "DaisyUI",
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "SQLAlchemy",
+            "Alembic",
+            "JWT Auth",
+            "Supabase Storage",
+            "Axios",
+            "Lucide Icons"
+        ],
+        "features": [
+            "Modern, responsive public website with hero section, statistics, and department showcase",
+            "Dynamic news/announcements system with pagination and category filtering",
+            "Admin dashboard with authentication and role-based access control",
+            "Rich-text announcement editor with image upload to Supabase storage",
+            "Signatory management system for announcement attribution",
+            "Interactive image modals for announcement images",
+            "WhatsApp contact integration for signatories",
+            "Real-time dashboard statistics and recent activity overview",
+            "Mobile-optimized navigation with collapsible sidebar",
+            "SEO-optimized with proper metadata and Open Graph tags"
+        ],
+        "challenges": [
+            "Implementing secure JWT-based authentication with token refresh mechanism",
+            "Managing complex many-to-many relationships between announcements and signatories",
+            "Optimizing image uploads and storage with Supabase integration",
+            "Building a rich-text editor with formatting preservation",
+            "Ensuring responsive design across mobile, tablet, and desktop devices",
+            "Implementing proper pagination and state management for announcements",
+            "Handling CORS and API authentication across frontend and backend"
+        ],
+        "achievements": [
+            "Successfully deployed production-ready platform with full CRUD functionality",
+            "Implemented comprehensive error handling and user feedback system",
+            "Built reusable component library with DaisyUI and custom components",
+            "Achieved proper separation of concerns with layout-based routing",
+            "Implemented database migrations with Alembic for version control",
+            "Created scalable API architecture with FastAPI and SQLAlchemy ORM",
+            "Integrated third-party services (Supabase, Vercel Analytics)",
+            "Maintained clean code architecture with proper TypeScript typing"
+        ],
+        "image": "/cissa.png",
+        "demoUrl": "https://cissa-paragon-website-frontend.vercel.app/",
+        "githubUrl": "https://github.com/cissaunilorin/cissa-paragon-website-frontend",
+        "status": "Live",
+        "featured": true
+    },
+    {
         "id": "kwiki-ai",
         "title": "Kwiki AI",
         "subtitle": "AI-Powered Flashcard Generator",
@@ -90,12 +149,7 @@
         "subtitle": "Image to ASCII Art Converter",
         "description": "A high-performance image processing service that converts images to ASCII art using OpenCV and custom algorithms.",
         "longDescription": "Created an efficient image processing service that transforms uploaded images into ASCII art representations. The system handles various image formats, provides customizable ASCII output options, and supports batch processing for high-volume conversions.",
-        "technologies": [
-            "Python",
-            "FastAPI",
-            "OpenCV",
-            "Pillow"
-        ],
+        "technologies": ["Python", "FastAPI", "OpenCV", "Pillow"],
         "features": [
             "Support for multiple image formats (JPEG, PNG, GIF, etc.)",
             "Customizable ASCII output with various character sets",

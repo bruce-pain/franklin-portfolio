@@ -48,6 +48,10 @@
             "skillicon-name": "react"
         },
         {
+            "name": "Next.js",
+            "skillicon-name": "nextjs"
+        },
+        {
             "name": "Astro",
             "skillicon-name": "astro"
         },
