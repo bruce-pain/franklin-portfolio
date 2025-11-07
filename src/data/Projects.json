@@ -27,11 +27,7 @@
             "Admin dashboard with authentication and role-based access control",
             "Rich-text announcement editor with image upload to Supabase storage",
             "Signatory management system for announcement attribution",
-            "Interactive image modals for announcement images",
-            "WhatsApp contact integration for signatories",
-            "Real-time dashboard statistics and recent activity overview",
-            "Mobile-optimized navigation with collapsible sidebar",
-            "SEO-optimized with proper metadata and Open Graph tags"
+            "WhatsApp contact integration for signatories"
         ],
         "challenges": [
             "Implementing secure JWT-based authentication with token refresh mechanism",
@@ -138,10 +134,10 @@
             "Achieved scalable architecture supporting concurrent users"
         ],
         "image": "/fundraiser.png",
-        "demoUrl": "https://fundraiser-project-api-production.up.railway.app/docs",
+        "demoUrl": "https://fundraiser-project-api.onrender.com/docs",
         "githubUrl": "",
         "status": "Live",
-        "featured": false
+        "featured": true
     },
     {
         "id": "picture-txt",

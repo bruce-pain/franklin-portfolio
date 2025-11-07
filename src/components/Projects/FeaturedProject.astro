@@ -73,7 +73,7 @@ const { project, index } = Astro.props;
                     <h4 class="font-semibold mb-3">Key Features</h4>
                     <div class="grid gap-2">
                         {
-                            project.features.slice(0, 3).map((feature: any) => (
+                            project.features.map((feature: any) => (
                                 <div class="flex items-start gap-2">
                                     <BadgeCheck class="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                                     <span class="text-sm">{feature}</span>
